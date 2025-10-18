@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS property (position)</title>
+    <style>
+        .fixed{
+            position: fixed;
+            background-color: red;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .relative{
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        .parent{
+            position: relative;
+        }
+        .left{
+            position: absolute;
+            bottom: 60px;
+            left: 70px;
+        }
+         .parent2{
+            border: 3px solid red;
+            width: 500px;
+            height: 500px;
+            border-radius: 250px;
+            position: relative;
+         }
+         .child1{
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+         .child2{
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+         .child3{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+         }
+         .child4{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+         }
+         .sticky{
+            position: sticky;
+            top: 0;
+            border: 2px solid red;
+            background-color: green;
+            padding: 5px;
+         }
+    </style>
+</head>
+<body>
+    <!-- <div class="fixed">This is fixed text</div>
+    <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nesciunt</p>
+    <div class="relative">This is relative text</div>
+    <div class="parent">
+        <img src="./pexels-pixabay-208984.jpg" alt="" width="610" height="600">
+        <div class="left">left text</div>
+    </div> -->
+    <div class="parent2">
+        <div class="child1">Text one</div>
+        <div class="child2">Text two</div>
+        <div class="child3">Text three</div>
+        <div class="child4">Text four</div>
+    </div>
+    <!-- <h2>examples of sticky position</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, facere! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, quis.</p>
+    <div class="sticky">This is sticky text</div>
+    <div style="margin: 2000px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe iure ducimus, animi vitae voluptate repudiandae ipsum aspernatur, earum iusto reprehenderit accusantium voluptates odio est itaque neque debitis odit praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div> -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+p{
+    color: green;
+    background-color: aqua;
+    text-align: center;
+    /* border-color: red;
+    border-style: solid;
+    border-width: 2px; */
+    border: red 3px dashed;
+}
+.myClass{
+   background: linear-gradient(blue,yellow);
+   text-align: center;
+   font-size: 25px;
+  
+}
+#myId{
+    background: yellow;
+}
+table{
+    background-color: grey;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+      border: black 1px solid;
+}
+th{
+    background-color: #333333;
+    color: white;
+    border: 1px solid white;
+}
+.mySpan{
+    background-color: green;
+    /* padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px; */
+    padding: 20px;
+    
+}

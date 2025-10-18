@@ -1,0 +1,165 @@
+/* default font size = 16px */
+/* 1em = 1rem = 16px */
+/* em checks the nearest element while rem checks the root element which is html */
+/* .parent{
+    border: 2px solid #000;
+    font-size: 25px;
+}
+.ch1{
+    font-size: 20px;
+}
+.ch2{
+    font-size: 2em;
+}
+.ch3{
+    font-size: 2rem;
+} */
+
+/* CSS selector */
+.pseudo_class:hover{
+    background-color: blue;
+    color: brown;
+}
+input[type=text]:focus{
+    background-color: #600c0c;
+}
+
+/* works only for block element */
+.pseudo_element::first-line{
+    color: red;
+}
+
+/* Z-index property */
+.myContainer{
+    position: relative;
+    border: 2px solid black;
+    height: 80vh;
+}
+.box1{
+    position: absolute;
+    background-color: #000;
+    color: white;
+    height: 200px;
+    width: 400px;
+    z-index: 1;
+    left: 100px;
+}
+.box2{
+    position: absolute;
+    background-color: green;
+    height: 200px;
+    width: 300px;
+    z-index: 2;
+    left: 100px;
+    top: 100px;
+}
+.box3{
+    position: absolute;
+    background-color: #a13131;
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: 100px;
+}
+img{
+    float: right;
+    margin-left: 10px;
+}
+.a{
+    float: left;
+    padding: 20px;
+}
+.float1{
+    background-color: #16ab16;
+    width: 25%;
+}
+.float2{
+    background-color: #ab1639;
+    width: 30%;
+}
+.float3{
+    background-color: #9aab16;
+    width: 30%;
+}
+/*  CSS grid property*/
+.container{
+    display: grid;
+    background-color: #de31d3;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 5px;
+    padding: 2px;
+}
+.container div{
+    background-color: #615e5e;
+}
+.containerOne{
+    display: grid;
+    gap: 3px;
+    grid-template-areas: "header header" "listItem contents" "footer footer";
+    grid-template-columns: 1fr 3fr;
+    background-color: #c4c410;
+}
+.containerOne div{
+    background-color: #e4e3e3;
+}
+.containerOne div.header{
+    grid-area: header;
+}
+.containerOne div.listItem{
+    grid-area: listItem;
+}
+.containerOne div.footer{
+    grid-area: footer;
+}
+
+/* .containerTwo{
+    display: grid;
+    /* background-color: #1030d4; 
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+    padding: 3px;
+    grid-template-areas: "fileOne fileOne fileOne fileTwo" "fileThree fileFour fileFive fileSix" "fileSeven fileSeven fileEight fileNine" "fileTen fileTen fileTen fileTen";
+}
+.containerTwo div{
+    background-color: #9db518;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+.containerTwo div.fileOne{
+    grid-area: fileOne;
+}
+.containerTwo div.fileThree{
+    grid-area: fileThree;
+}
+.containerTwo div.fileSeven{
+    grid-area: fileSeven;
+}
+.containerTwo div.fileTen{
+    grid-area: fileTen;
+} */
+.containerTwo{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 3px;
+}
+.containerTwo div{
+    background-color: #82ae11;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+.div1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.div2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.div3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
