@@ -16,6 +16,7 @@ const myId = 1234;
 // myId = 12344; // reassignation for const cause an error
 console.log(myId);
 
+var x = true;
 let x = true;
 console.log("x"); // output =  x
 console.log(x); // output = true
@@ -29,6 +30,7 @@ console.log(typeof y); // output = datatype of z => string
 
 let myArray = ["Abebe", 3766, true]; // help us to assign all datatypes at once
 console.log(myArray);
+
 
 let myObj = {
   name: "Mizan",
