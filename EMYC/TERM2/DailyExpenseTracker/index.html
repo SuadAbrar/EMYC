@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Daily Expense Tracker</title>
+</head>
+
+<body>
+    <h1 class="text-center text-2xl m-5 font-bold text-purple-500 ">Daily Expense Tracker</h1>
+    <div class="md:grid md:grid-cols-2 gap-4 mt-[60px]">
+        <form action="" id="expenseForm" class="flex flex-col  gap-6 border border-pink-500 rounded-lg p-8 w-auto justify-center mx-4">
+            <div>
+    
+                <label for="" class="text-pink-500 font-semibold pr-4">Expense name:</label>
+                <input type="text" placeholder="Expense name" id="expenseName"
+                    class="border border-gray-500 rounded pl-2 py-[5px] font-normal text-gray-400 " required>
+            </div>
+            <div>
+    
+                <label for="" class="text-pink-500 font-semibold pr-1">Expense amount:</label>
+                <input type="number" placeholder="Expense amount" id="expenseAmount"
+                    class="border border-gray-500 rounded pl-2 py-[5px] font-normal text-gray-400 " required>
+            </div>
+            <button type="submit"
+                class="rounded-xl text-pink-500 border-solid border border-pink-500 p-2 hover:bg-pink-500 hover:text-white">Add
+                Expense</button>
+        </form>
+        <div class="border border-purple-500 w-auto rounded-lg md:mr-4 mx-4 mt-4 md:mt-0 md:mx-0" id="expenseList">
+        </div>
+        <p class="text-center text-gray-300 text-3xl" id="total">Total: 0</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
