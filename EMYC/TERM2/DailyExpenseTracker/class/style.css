@@ -1,0 +1,31 @@
+:root {
+    --accent: #a02334;
+    --muted: #666;
+    --bg: #ffeead;
+    ---card: white;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: linear-gradient(180deg, var(--bg));
+    color: #222;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(---card);
+    border-radius: 20px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+}
+
+form{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 12px;
+}

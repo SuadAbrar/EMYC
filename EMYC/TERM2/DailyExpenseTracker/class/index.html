@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Daily expense tracker</h1>
+        <p>track your daily expense here</p>
+        <form action="">
+            <input type="text" id="dec" placeholder="expense name" required />
+            <select name="" id="">
+                <option value="">Food</option>
+                <option value="">Transportion</option>
+                <option value="">Bills</option>
+                <option value="">Other</option>
+            </select>
+            <input type="number" id="amount" min="1" placeholder="expense amount" required />
+            <button type="submit">Add Expense</button>
+        </form>
+        <div id="expense-list">
+            <div id="total-expense">0.00ETB</div>
+        </div>
+    </div>
+
+    <script>
+        const STORE_KEY = "EXPENCES_DATA";
+        function generateId() {
+            return Date.now().toString(36) + Math.random().toString().slice(2, 8);
+        }
+        function saveExpenses(val) {
+            localStorage.setItem(STORE_KEY, JSON.stringify(val));
+        }
+        function addExpense({ description, amount, category }) {
+            const expense = {
+                id: generateId(),
+                description: description.trim(),
+                amount: Number(amount),
+                date: new Date().toISOString(),
+            };
+
+            saveExpenses(expense);
+        }
+
+        function loadExpense(){
+            
+        }
+
+        function renderExpenses() {
+            const expenseContainer = document.getElementById("expense-list");
+            expenseContainer.innerHTML = "";
+            if (expenses.length === 0) {
+                expenseContainer.innerHTML = "<div> No expense </div>";
+            } else {
+                expenses
+                    .slice()
+                    .reverse()
+                    .forEach((el) => {
+                        const el = document.createElement("div");
+                        el.className = "expense";
+                        const remain = document.createElement("div");
+                        remain.innerHTML =
+                        "<div> ${el}.category} ${new Date (item.date.toLocalString())}</div>";
+                        const side = document.createElement("div");
+                        side.className('sode')
+                        const amount = document.createElement("div");
+                        amount.innerHTML = `${Number(item.amount.toFixed(2))}`
+
+                        side.appendChild(amount)
+                        elements.appendChild(remain)
+                        elements.appendChild(side)
+                        expenseContainer.appendChild(elements)
+                    });
+            }
+        }
+    </script>
+</body>
+
+</html>
