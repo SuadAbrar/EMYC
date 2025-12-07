@@ -1,0 +1,464 @@
+/* ==========================================
+   MIZAN MIT ACADEMY - DOM MANIPULATION CSS
+   Brand Colors: Blue-Black (#1a1a2e) & Orange (#ff6b35)
+   File: styles.css
+   ========================================== */
+
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === HEADER === */
+.header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff6b35;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* === NAVIGATION === */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background: #ff6b35;
+    color: white;
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+    padding: 40px 20px;
+}
+
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: #1a1a2e;
+    border-left: 5px solid #ff6b35;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.section-title i {
+    color: #ff6b35;
+    margin-right: 10px;
+}
+
+/* === DEMO BOX === */
+.demo-box {
+    background: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.demo-text {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 3px solid #ff6b35;
+}
+
+.box {
+    background: #e3f2fd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 2px solid #2196f3;
+}
+
+.highlight {
+    background: #fff3cd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* === BUTTONS === */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background: #1a1a2e;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0d0d17;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.btn-large {
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.button-group {
+    margin-top: 15px;
+}
+
+/* === CARDS === */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#card-title {
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+#card-text {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#html-content {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* === INPUT FIELDS === */
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.input-field:disabled {
+    background: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* === OUTPUT BOX === */
+.output-box {
+    background: #1a1a2e;
+    color: #00ff00;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.output-box h3 {
+    color: #ff6b35;
+    margin-bottom: 15px;
+}
+
+.output-content {
+    background: #0d0d17;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 60px;
+    color: #00ff00;
+}
+
+/* === STYLE MANIPULATION DEMO === */
+.style-box {
+    background: white;
+    border: 3px solid #dee2e6;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+/* Classes that will be added/removed dynamically */
+.highlighted {
+    background: linear-gradient(135deg, #ff6b35, #f7941d);
+    color: white;
+    border-color: #ff6b35;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.3);
+}
+
+.dark-mode {
+    background: #1a1a2e;
+    color: white;
+    border-color: #ff6b35;
+}
+
+/* === IMAGE & LINK === */
+.demo-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 15px 0;
+    transition: all 0.3s;
+}
+
+.demo-img:hover {
+    transform: scale(1.02);
+}
+
+.demo-link {
+    display: inline-block;
+    color: #1a1a2e;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #1a1a2e;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.demo-link:hover {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* === DOM TRAVERSING === */
+.traverse-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.traverse-child {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    min-width: 150px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.target-child {
+    border-color: #ff6b35;
+    background: #fff3e0;
+}
+
+.traverse-child:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Highlighting for traversing demo */
+.parent-highlight {
+    background: #e3f2fd !important;
+    border: 3px solid #2196f3 !important;
+}
+
+.sibling-highlight {
+    background: #f3e5f5 !important;
+    border: 3px solid #9c27b0 !important;
+}
+
+/* === DYNAMIC ELEMENTS === */
+.dynamic-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+.dynamic-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 4px solid #ff6b35;
+    transition: all 0.3s;
+}
+
+.dynamic-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* === EVENT HANDLING === */
+.event-feedback {
+    background: #e3f2fd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 5px solid #2196f3;
+    font-size: 18px;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-feedback {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-style: italic;
+    color: #666;
+}
+
+/* === FOOTER === */
+.footer {
+    background: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-text {
+    color: #ff6b35;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .traverse-container {
+        flex-direction: column;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+}

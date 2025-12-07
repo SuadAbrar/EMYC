@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation - Mizan MiT Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header id="main-header" class="header">
+        <div class="container">
+            <h1 id="header-title" class="title">
+                <i class="fas fa-code"></i> JavaScript DOM Manipulation
+            </h1>
+            <p class="subtitle">Learn to control HTML elements with JavaScript</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav id="main-nav" class="navbar">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#section1" class="nav-link">Selecting</a></li>
+                <li class="nav-item"><a href="#section2" class="nav-link">Content</a></li>
+                <li class="nav-item"><a href="#section3" class="nav-link">Styles</a></li>
+                <li class="nav-item"><a href="#section4" class="nav-link">Attributes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container main-content">
+        
+        <!-- SECTION 1: ELEMENT SELECTION DEMO -->
+        <section id="section1" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-mouse-pointer"></i> 1. Selecting Elements
+            </h2>
+            <div class="demo-box">
+                <p class="demo-text">This is a paragraph with class "demo-text"</p>
+                <p class="demo-text">Another paragraph with the same class</p>
+                <div id="unique-div" class="box">
+                    <span class="highlight">I'm a unique div with ID "unique-div"</span>
+                </div>
+                <button class="btn btn-primary">Button 1</button>
+                <button class="btn btn-secondary">Button 2</button>
+                <button class="btn btn-primary">Button 3</button>
+            </div>
+            <div class="output-box">
+                <h3><i class="fas fa-terminal"></i> Selection Results:</h3>
+                <div id="selection-output" class="output-content">
+                    Open browser console to see selection results...
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CONTENT MANIPULATION -->
+        <section id="section2" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-edit"></i> 2. Manipulating Content
+            </h2>
+            <div class="demo-box">
+                <div id="content-demo" class="card">
+                    <h3 id="card-title">Original Title</h3>
+                    <p id="card-text">Original paragraph text content.</p>
+                    <div id="html-content">Original HTML content</div>
+                    <input type="text" id="text-input" class="input-field" value="Original input value" placeholder="Type something...">
+                </div>
+            </div>
+            <div class="output-box">
+                <h3><i class="fas fa-info-circle"></i> Content Changes:</h3>
+                <div id="content-output" class="output-content">
+                    Watch the content change above...
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: STYLE MANIPULATION -->
+        <section id="section3" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-palette"></i> 3. Manipulating Styles
+            </h2>
+            <div class="demo-box">
+                <div id="style-demo" class="style-box">
+                    <h3>Style Target Element</h3>
+                    <p>This box will change styles dynamically</p>
+                </div>
+                <div class="button-group">
+                    <button id="class-btn-1" class="btn btn-success">Add Class</button>
+                    <button id="class-btn-2" class="btn btn-warning">Remove Class</button>
+                    <button id="class-btn-3" class="btn btn-info">Toggle Class</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: ATTRIBUTE MANIPULATION -->
+        <section id="section4" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-wrench"></i> 4. Manipulating Attributes
+            </h2>
+            <div class="demo-box">
+                <img id="demo-image" src="https://via.placeholder.com/300x200/667eea/ffffff?text=Original+Image" alt="Demo Image" class="demo-img">
+                <br>
+                <a id="demo-link" href="https://example.com" target="_blank" class="demo-link">
+                    <i class="fas fa-external-link-alt"></i> Original Link
+                </a>
+                <br><br>
+                <input type="text" id="attr-input" class="input-field" placeholder="Enabled input" disabled>
+            </div>
+        </section>
+
+        <!-- SECTION 5: TRAVERSING DOM -->
+        <section id="section5" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram"></i> 5. DOM Traversing
+            </h2>
+            <div class="demo-box">
+                <div id="parent-box" class="traverse-container">
+                    <div class="traverse-child" data-child="1">Child 1</div>
+                    <div class="traverse-child target-child" data-child="2">
+                        <i class="fas fa-bullseye"></i> Target Child
+                    </div>
+                    <div class="traverse-child" data-child="3">Child 3</div>
+                </div>
+            </div>
+            <div class="output-box">
+                <h3><i class="fas fa-sitemap"></i> Traversing Info:</h3>
+                <div id="traverse-output" class="output-content">
+                    DOM relationship information...
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: CREATING & REMOVING ELEMENTS -->
+        <section id="section6" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-plus-circle"></i> 6. Creating & Removing Elements
+            </h2>
+            <div class="demo-box">
+                <div id="dynamic-container" class="dynamic-box">
+                    <div class="dynamic-item">Original Item 1</div>
+                    <div class="dynamic-item">Original Item 2</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: EVENT HANDLING -->
+        <section id="section7" class="section">
+            <h2 class="section-title">
+                <i class="fas fa-bolt"></i> 7. Event Handling
+            </h2>
+            <div class="demo-box">
+                <button id="event-btn" class="btn btn-large btn-primary">
+                    <i class="fas fa-hand-pointer"></i> Click Me!
+                </button>
+                <div id="event-output" class="event-feedback">
+                    Click the button above to see the event in action!
+                </div>
+                <br>
+                <input type="text" id="event-input" class="input-field" placeholder="Type something...">
+                <div id="input-feedback" class="input-feedback"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p><i class="fas fa-graduation-cap"></i> Mizan MiT Academy - JavaScript DOM Manipulation Tutorial</p>
+            <p class="footer-text">Open your browser console (F12) to see all DOM operations!</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
