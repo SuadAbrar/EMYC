@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
     <title>For of loop</title>
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        padding: 20px;
+      }
+
+      #posts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .post-card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease;
+      }
+
+      .post-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .post-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .post-body {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 12px;
+      }
+
+      .post-footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <div class="md:flex justify-center mt-[50px] md:mt-[100px] gap-5">
+      <div class="border border-green-600 p-4 rounded-md mb-4 md:mb-0 md:pr-[70px] md:pl-[40px]">
+            <h4 class="font-medium text-green-600 text-center">
+                Registration form
+            </h4>
+            <form action="" id="registerForm" class="mt-4 flex flex-col">
+                <label for="" class="font-medium text-green-600">Name</label>
+                <input type="text" id="regName" class="border border-green-600 rounded-md mb-4" />
+                <label for="" class="font-medium text-green-600">Email</label>
+                <input type="email" id="regEmail" class="border border-green-600 rounded-md mb-4" />
+                <label for="" class="font-medium text-green-600">Password</label>
+                <input type="password" id="regPassword" class="border border-green-600 rounded-md mb-4" />
+                <button type="submit" id="register"
+                    class="p-2 mt-4 md:mt-2 bg-green-700 rounded-md text-white font-medium cursor-pointer hover:bg-green-600">
+                    Register
+                </button>
+                <div><span id="error"></span></div>
+            </form>
+        </div>
+      <div class="border border-green-600 p-4 rounded-md">
+        <h4 class="font-medium text-green-600 text-center">login form</h4>
+        <form action="" id="loginForm" class="mt-4 flex flex-col">
+          <label for="" class="font-medium text-green-600">Email</label>
+          <input
+            type="email"
+            id="loginEmail"
+            class="border border-green-600 rounded-md mb-4"
+            required
+          />
+          <label for="" class="font-medium text-green-600">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            class="border border-green-600 rounded-md mb-4"
+            required
+          />
+          <button
+            type="submit"
+            id="login"
+            class="p-2 mt-4 md:mt-2 bg-green-700 rounded-md text-white font-medium cursor-pointer hover:bg-green-600"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div> -->
+
+    <button id="getPosts">Get</button>
+    <!-- <ul id="lists"></ul> -->
+
+    <div id="posts-container"></div>
+
+    <script src="async.js"></script>
+    <!-- <script src="oop.js"></script> -->
+    <script></script>
+  </body>
 </html>
