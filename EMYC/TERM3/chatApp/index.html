@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ChatApp</title>
+  </head>
+  <body class="bg-orange-100">
+    <div>
+      <div class="p-4 font-semibold text-center border-b">Chat App</div>
+      <div id="container" class="p-4"></div>
+      <div class="p-3 flex items-center gap-2 border-t">
+        <!-- user1 -->
+        <textarea
+          name=""
+          id="inputOne"
+          rows="1"
+          class="p-2 flex-1 rounded-lg resize-none focus:outline-none border"
+        ></textarea>
+        <button class="text-xl" id="iconBtnOne">btn</button>
+        <button class="hidden text-orange-500 text-xl" id="sendBtnOne">
+          send
+        </button>
+        <!-- user2 -->
+        <textarea
+          name=""
+          id="inputTwo"
+          rows="1"
+          class="p-2 flex-1 rounded-lg resize-none focus:outline-none border"
+        ></textarea>
+        <button class="text-xl" id="iconBtnTwo">btn</button>
+        <button class="hidden text-orange-500 text-xl" id="sendBtnTwo">
+          send
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
